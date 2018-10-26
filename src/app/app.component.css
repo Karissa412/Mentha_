@@ -1,0 +1,48 @@
+div#card{
+    font-family: 'Lato', sans-serif;
+}
+
+input{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+span{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+div#cl{
+    height: 100%;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+p#result{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+p#resultx{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: red;
+}
+
+#circle, #circle2{
+    color: black;
+}
+
+#brand-logo{
+    font-family: 'Lato', sans-serif;
+}
+
+label{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}

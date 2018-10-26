@@ -1,0 +1,175 @@
+<nav>
+    <div class="nav-wrapper teal">
+      <img src="https://www.jasoft.org/Blog/image.axd?picture=Angular_thumb.png" width="75" height="75" />
+      <a class="brand-logo">Angularsito</a>
+    </div>
+  </nav>
+
+<span class="card-title"><h1><b>Serie de Taylor</b></h1></span>
+<div layout="row" layout-align="center center"><p id="xd">Ingrese sus datos</p></div>
+
+    <div class="input-field col s8">
+        <input [(ngModel)]="taylor.n" type="text">
+        <label for="n">Ingresa el valor de N</label>
+        </div>
+                                      
+        <div class="input-field col s8">
+        <input [(ngModel)]="taylor.x"  type="text">
+        <label for="x">Ingresa el valor de X</label>
+        </div>
+
+<div><span><b>El valor de "n" es: </b>{{taylor.n}}</span></div>
+<div><span><b>El valor de "x" es: </b>{{taylor.x}}</span></div>
+
+<div class="row">
+
+    <div class="col s6">
+
+      <p><b>Función Exponencial y Logaritmo Natural</b></p>
+
+      <p>
+          <label>
+            <input class="with-gap" id="ex" name="group14" type="radio" (change)="calcularex()"  disabled="{{radioe}}"  checked="{{radioe}}" />
+            <span>e^x</span>
+          </label>
+      </p>
+
+      <p>
+          <label>
+            <input class="with-gap" id="lnunox" name="group15" type="radio" (change)="calcularlnunox()"  disabled="{{radiolnuno}}"  checked="{{radiolnuno}}" />
+            <span>ln(1+x)</span>
+          </label>
+      </p>
+
+      <p>
+          <label>
+            <input class="with-gap" id="lnx" name="group16" type="radio" (change)="calcularlnx()"  disabled="{{radioln}}"  checked="{{radioln}}" />
+            <span>ln(x)</span>
+          </label>
+      </p>
+
+      <p><b>Funciones trigonométricas</b></p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="senx" name="group1" type="radio" (change)="calcular()"  disabled="{{radioSen}}"  checked="{{radioSen}}" />
+              <span>SenX</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="cosx" name="group2" type="radio" (change)="calcularcosx()" disabled="{{radioCos}}" checked="{{radioCos}}" />
+              <span>CosX</span>
+            </label>
+        </p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="tanx" name="group3" type="radio" (change)="calculartanx()" disabled="{{radioTan}}" checked="{{radioTan}}" />
+              <span>TanX</span>
+            </label>
+        </p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="secx" name="group4" type="radio" (change)="calcularsecx()" disabled="{{radioSec}}" checked="{{radioSec}}" />
+              <span>SecX</span>
+            </label>
+        </p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="cscx" name="group5" type="radio" (change)="calcularcscx()" disabled="{{radioCsc}}" checked="{{radioCsc}}" />
+              <span>CscX</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="arcsinx" name="group6" type="radio" (change)="calculararcsinx()" disabled="{{radioArcsin}}" checked="{{radioArcsin}}" />
+              <span>ArcsinX</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="arctanx" name="group7" type="radio" (change)="calculararctanx()" disabled="{{radioArctan}}" checked="{{radioArctan}}" />
+              <span>ArctanX</span>
+            </label>
+        </p>
+
+    </div>
+
+    <div class="col s6">
+      <p><b>Función W de Lambert</b></p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="wox" name="group8" type="radio" (change)="calcularwox()" disabled="{{radioWox}}" checked="{{radioWox}}" />
+              <span>Wo(X)</span>
+            </label>
+        </p>
+
+<P><b>Funciones Hiperbólicas</b></P>
+
+        <p>
+            <label>
+              <input class="with-gap" id="sinhx" name="group9" type="radio" (change)="calcularsinhx()" disabled="{{radioSinh}}" checked="{{radioSinh}}" />
+              <span>SinhX</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="coshx" name="group10" type="radio" (change)="calcularcoshx()" disabled="{{radioCosh}}" checked="{{radioCosh}}" />
+              <span>CoshX</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="tanhx" name="group11" type="radio" (change)="calculartanhx()" disabled="{{radioTanh}}" checked="{{radioTanh}}" />
+              <span>TanhX</span>
+            </label>
+        </p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="sininvx" name="group12" type="radio" (change)="calcularsinhinvx()" disabled="{{radioSinhinv}}" checked="{{radioSinhinv}}" />
+              <span>Sinh-1X</span>
+            </label>
+        </p>
+        
+        <p>
+            <label>
+              <input class="with-gap" id="tanhinvx" name="group13" type="radio" (change)="calculartanhinvx()" disabled="{{radioTanhinv}}" checked="{{radioTanhinv}}" />
+              <span>Tanh-1X</span>
+            </label>
+        </p>
+
+        <p><b>Serie Geometrica</b></p>
+
+        <p>
+            <label>
+              <input class="with-gap" id="ax" name="group17" type="radio" (change)="calcularax()" disabled="{{radioax}}" checked="{{radioax}}" />
+              <span>1/1-X</span>
+            </label>
+        </p>
+
+    </div>
+  </div>
+<br/>
+                        <div class="row">
+                            <div class="col s12 m5">
+                              <div class="card-panel teal">
+                                <span class="white-text">
+                                </span>
+                                <p id="result"><b>El resultado es: <p id="resultx">{{taylor.division}}</p></b></p>
+
+                                <button class="btn waves-effect waves-light red accent-4" (click)="limpiar()">Limpiar datos
+                                    <i class="material-icons right">delete</i>
+                                  </button>
+                              </div>
+                            </div>
+                          </div>
